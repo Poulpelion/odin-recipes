@@ -18,6 +18,11 @@ body {
     font-family: "Michroma", Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.6rem;
     font-weight: lighter;
+    background-image: url(img/BG-2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -40,8 +45,22 @@ body {
 
 .catch-phrase { 
     font-family: "League Script";
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     text-decoration: 1px underline;
+    padding: 0 0.5rem;
 }
 
+.main-container {
+    padding: 0.5rem;
+ 
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: space-around;
+    align-items: flex start;
+}
+
+nav li {
+    list-style: none;
+}
