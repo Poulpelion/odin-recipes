@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
+
 
 /* CSS RESET */
 
@@ -18,16 +20,13 @@ body {
     font-weight: lighter;
 }
 
-header { 
-    
-}
+
 .title {
     background: linear-gradient(135deg, green, turquoise);
     -webkit-background-clip: text;
     background-clip: text;
     color: rgba(0, 0, 0, 0);
-    font-family: "Oi", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 40px;
+    font-size: 3rem;
     margin: 1rem auto;
     padding: 2rem;
     text-align: center;
@@ -36,6 +35,13 @@ header {
 }
 
 .title:hover {
-    font-size: 60px;
+    font-size: 4rem;
+}
+
+.catch-phrase { 
+    font-family: "League Script";
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: 1px underline;
 }
 
