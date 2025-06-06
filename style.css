@@ -27,16 +27,30 @@ body {
 
 
 .title {
-    background: linear-gradient(135deg, green, turquoise);
-    -webkit-background-clip: text;
+    width: 50%;
+    max-width: 400px;
+    min-width: fit-content;
+    background: linear-gradient(in oklab, rgb(0, 105, 0), rgb(105, 255, 250));
     background-clip: text;
     color: rgba(0, 0, 0, 0);
     font-size: 3rem;
-    margin: 1rem auto;
+
+    margin: 2rem auto;
     padding: 2rem;
     text-align: center;
+
+    border: 1px solid hsl(0, 0%, 50%);
+    border-top: 1px solid hsl(0, 0%, 90%);
+    border-left: 1px solid hsl(0, 0%, 90%);
+    border-radius: 20px;
+    box-shadow: 0.2rem 0.2rem 
+    0.5rem  hsl(0, 0%, 20%);
     transition: font-size 0.7s;
-    
+}
+
+.definition {
+    text-align: center;
+
 }
 
 .title:hover {
@@ -46,19 +60,22 @@ body {
 .catch-phrase { 
     font-family: "League Script";
     font-size: 1.8rem;
-    text-align: center;
-    text-decoration: 1px underline;
+    text-align: left;
+
+    margin: 1rem;
     padding: 0 0.5rem;
+    
 }
 
+
 .main-container {
-    padding: 0.5rem;
-    margin-top: 2rem;
+    padding: 0 10;
+    margin: 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex start;
-    gap: 1rem;
+    gap: 4rem;
 }
 
 nav {
@@ -66,6 +83,7 @@ nav {
     border: 1px solid black;
     min-width: fit-content;
     max-height: 120px;
+
     padding: 0.7rem;
     border: 1px solid hsl(0, 0%, 50%);
     border-top: 1px solid hsl(0, 0%, 90%);
@@ -74,18 +92,52 @@ nav {
     box-shadow: 0.2rem 0.2rem 0.5rem  hsl(0, 0%, 20%);
 }
 
+nav menu {
+    line-height: 2rem;
+}
 nav li {
     list-style: none;
 }
 
 .presentation {
     background-color: rgba(255, 255, 255, 0.857);
-    max-width: 70vw;
+    max-width: 800px;
     padding: 0.7rem;
     border: 1px solid hsl(0, 0%, 50%);
     border-top: 1px solid hsl(0, 0%, 90%);
     border-left: 1px solid hsl(0, 0%, 90%);
     border-radius: 20px;
     box-shadow: 0.2rem 0.2rem 0.5rem  hsl(0, 0%, 20%);
-  
+}
+
+.presentation h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+}
+
+.presentation span {
+    background: linear-gradient(in oklab, hsl(120, 100%, 21%), hsl(178, 100%, 71%));
+    background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    font-size: 2rem;
+ 
+}
+
+a:link, a:visited {
+    background: linear-gradient(in oklab, hsl(120, 100%, 40%), hsl(178, 100%, 20%));
+    
+    background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    background: linear-gradient(in oklab, hsl(120, 100%, 10%), hsl(178, 100%, 40%));
+    background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    padding: 0.1rem 0.3rem;
+    border-bottom: 1px solid hsl(0, 0%, 50%);
+    border-right: 1px solid hsl(0, 0%, 50%);
+    border-radius: 10px;
 }
