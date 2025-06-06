@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+
+/* CSS RESET */
+
+*, *::before, *::after  {
+     box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Michroma", Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6rem;
+    font-weight: lighter;
+}
+
+header { 
+    
+}
+.title {
+    background: linear-gradient(135deg, green, turquoise);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    font-family: "Oi", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    margin: 1rem auto;
+    padding: 2rem;
+    text-align: center;
+    transition: font-size 0.7s;
+    
+}
+
+.title:hover {
+    font-size: 60px;
+}
+
