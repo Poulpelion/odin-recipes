@@ -67,25 +67,24 @@ body {
     
 }
 
-
 .main-container {
     padding: 0 10;
     margin: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: flex start;
+    align-items: flex-start;
     gap: 4rem;
 }
 
 nav {
     background-color: rgba(255, 255, 255, 0.857);
-    border: 1px solid black;
-    min-width: fit-content;
+    min-width: 140px;
     max-width: fit-content;
-    max-height: 120px;
-
+    max-height: 90px;
+    text-align: center;
     padding: 0.7rem;
+
     border: 1px solid hsl(0, 0%, 50%);
     border-top: 1px solid hsl(0, 0%, 90%);
     border-left: 1px solid hsl(0, 0%, 90%);
@@ -101,9 +100,12 @@ nav li {
 }
 
 .presentation {
+    line-height: 2rem;
+    word-spacing: 0.2rem;
     background-color: rgba(255, 255, 255, 0.857);
     max-width: 800px;
     padding: 0.7rem;
+
     border: 1px solid hsl(0, 0%, 50%);
     border-top: 1px solid hsl(0, 0%, 90%);
     border-left: 1px solid hsl(0, 0%, 90%);
@@ -117,12 +119,23 @@ nav li {
 
 }
 
-.presentation span {
+.TLHF {
     background: linear-gradient(in oklab, hsl(120, 100%, 21%), hsl(178, 100%, 71%));
     background-clip: text;
     color: rgba(0, 0, 0, 0);
     font-size: 2rem;
  
+}
+
+.science {
+    background: linear-gradient(in oklab, hsl(120, 100%, 21%), hsl(178, 100%, 71%));
+    background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    font-size: 1.2rem;
+}
+
+.question {
+    font-size: 0.5rem;
 }
 
 a:link, a:visited {
