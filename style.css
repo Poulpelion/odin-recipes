@@ -166,7 +166,7 @@ nav li {
  
 }
 
-.science {
+.TLHFStyle {
     background: linear-gradient(in oklab, hsl(120, 100%, 21%), hsl(178, 100%, 71%));
     background-clip: text;
     color: rgba(0, 0, 0, 0);
@@ -174,7 +174,7 @@ nav li {
     border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
-.question {
+.small {
     font-size: 0.5rem;
 }
 
