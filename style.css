@@ -30,7 +30,7 @@ body {
     width: 50%;
     max-width: 400px;
     min-width: fit-content;
-    background: linear-gradient(174deg,rgba(42, 104, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    background: linear-gradient(in oklab, hsl(120, 100%, 21%), hsl(178, 100%, 71%));
     background-clip: text;
     background-size: 200% 200% ;
     color: rgba(0, 0, 0, 0);
@@ -150,6 +150,7 @@ nav li {
     background-clip: text;
     color: rgba(0, 0, 0, 0);
     font-size: 1.2rem;
+    text-decoration: underline;
 }
 
 .question {
