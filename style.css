@@ -1,285 +1,377 @@
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=League+Script&display=swap");
 
 /* CSS RESET */
 
-*, *::before, *::after  {
-     box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Michroma", Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.6rem;
-    font-weight: lighter;
-    background: url(img/BG-2.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+  font-family: "Michroma", Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6rem;
+  font-weight: lighter;
+  background: url(img/BG-2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
-
 .title {
-    width: 50%;
-    max-width: 400px;
-    min-width: fit-content;
-    background: linear-gradient(in oklab, hsl(120, 100%, 21%), hsl(178, 100%, 71%));
-    background-clip: text;
-    background-size: 200% 200% ;
-    color: rgba(0, 0, 0, 0);
-    font-size: 3rem;
+  width: 50%;
+  max-width: 400px;
+  min-width: fit-content;
+  background: linear-gradient(
+    in oklab,
+    hsl(120, 100%, 21%),
+    hsl(178, 100%, 71%)
+  );
+  background-clip: text;
+  background-size: 200% 200%;
+  color: rgba(0, 0, 0, 0);
+  font-size: 3rem;
 
-    margin: 2rem auto;
-    padding: 2rem;
-    text-align: center;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
 
-    border: 1px solid hsl(0, 0%, 50%);
-    border-top: 1px solid hsl(0, 0%, 90%);
-    border-left: 1px solid hsl(0, 0%, 90%);
-    border-radius: 20px;
-    box-shadow: 0.2rem 0.2rem 
-    0.5rem  hsl(0, 0%, 20%);
-    transition: all 0.7s ease-in-out;
-    animation: movingBG 15s ease-in-out infinite;
-    
+  border: 1px solid hsl(0, 0%, 50%);
+  border-top: 1px solid hsl(0, 0%, 90%);
+  border-left: 1px solid hsl(0, 0%, 90%);
+  border-radius: 20px;
+  box-shadow: 0.2rem 0.2rem 0.5rem hsl(0, 0%, 20%);
+
+  transition: all 0.7s ease-in-out;
+  animation: movingBG 10s ease-in-out infinite;
 }
 
 @keyframes movingBG {
-    0% {
-        background-position: 50% 100%;
-    }
+  0% {
+    background-position: 50% 100%;
+  }
 
-    50% {
-        background-position: 50% 0%;        
-    }
+  50% {
+    background-position: 50% 0%;
+  }
 
-    100%{
-        background-position: 50% 100%;
-    }
-    
-
+  100% {
+    background-position: 50% 100%;
+  }
 }
 
 .definition {
-    text-align: center;
-
+  text-align: center;
 }
 
 .title:hover {
-    font-size: 4rem;
-
+  font-size: 4rem;
 }
 
-.catch-phrase { 
-    font-family: "League Script";
-    font-size: 1.8rem;
-    text-align: left;
+.catch-phrase {
+  font-family: "League Script";
+  font-size: 1.8rem;
+  text-align: left;
 
-    margin: 1rem;
-    padding: 0 0.5rem;
-    
+  margin: 1rem;
+  padding: 0 0.5rem;
 }
 
 .main-container {
-    width: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
-nav {
-    background-color: rgba(255, 255, 255, 0.857);
-    max-width: 400px;
-    min-width: fit-content;
-    text-align: center;
-    padding: 0.7rem;
+/* Nav styling */
 
-    margin: 1rem auto;
+.main-nav {
+  background-color: rgba(255, 255, 255, 0.857);
+  max-width: 400px;
+  min-width: fit-content;
+  text-align: center;
+  padding: 0.7rem;
 
-    border: 1px solid hsl(0, 0%, 50%);
-    border-top: 1px solid hsl(0, 0%, 90%);
-    border-left: 1px solid hsl(0, 0%, 90%);
-    border-radius: 20px;
-    box-shadow: 0.2rem 0.2rem 0.5rem  hsl(0, 0%, 20%);
+  margin: 1rem auto;
+
+  border: 1px solid hsl(0, 0%, 50%);
+  border-top: 1px solid hsl(0, 0%, 90%);
+  border-left: 1px solid hsl(0, 0%, 90%);
+  border-radius: 20px;
+  box-shadow: 0.2rem 0.2rem 0.5rem hsl(0, 0%, 20%);
 }
 
-nav menu {
-    line-height: 2rem;
+.main-nav menu {
+  line-height: 2rem;
 }
-nav li {
-    width: 28%;
-    display: inline-block;
-    margin: 0 2rem;
-    list-style: none;
+.main-nav li {
+  width: 28%;
+  display: inline-block;
+  margin-inline: 2rem;
+  list-style: none;
 }
 
+.top-nav {
+  display: inline-block;
+  width: 100%;
+  align-items: right;
+}
 
-.presentation, .warning {
-    display: inline-block;
-    line-height: 2rem;
-    background-color: rgba(255, 255, 255, 0.857);
-    /* max-width: 40%;
+.bottom-nav {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+/* End Nav styling */
+
+.presentation,
+.warning {
+  display: inline-block;
+  line-height: 2rem;
+  background-color: rgba(255, 255, 255, 0.857);
+  /* max-width: 40%;
     min-width: 300px; */
 
-    padding: 2rem;
-    margin: 2rem 1rem;
+  padding: 2rem;
+  margin: 2rem 1rem;
 
-    border: 1px solid hsl(0, 0%, 50%);
-    border-top: 1px solid hsl(0, 0%, 90%);
-    border-left: 1px solid hsl(0, 0%, 90%);
-    border-radius: 20px;
-    box-shadow: 0.2rem 0.2rem 0.5rem  hsl(0, 0%, 20%);
+  border: 1px solid hsl(0, 0%, 50%);
+  border-top: 1px solid hsl(0, 0%, 90%);
+  border-left: 1px solid hsl(0, 0%, 90%);
+  border-radius: 20px;
+  box-shadow: 0.2rem 0.2rem 0.5rem hsl(0, 0%, 20%);
 }
 
 .presentation {
-    max-width: 60%;
-    min-width: 350px;
+  max-width: 60%;
+  min-width: 350px;
 }
 
-
 .warning {
-   font-size: 0.7rem;
-   max-width: 30%;
-   min-width: 300px;
-   align-self: center;
+  font-size: 0.7rem;
+  max-width: 30%;
+  min-width: 300px;
+  align-self: center;
 }
 
 :is(.presentation, .warning) h2 {
-    margin: 1.5rem auto;
-    text-align: center;
-   
+  margin: 1.5rem auto;
+  text-align: center;
 }
 
 .TLHF {
-    background: linear-gradient(in oklab, hsl(120, 100%, 21%), hsl(178, 100%, 71%));
-    background-clip: text;
-    color: rgba(0, 0, 0, 0);
-    font-size: 2rem;
- 
+  background: linear-gradient(
+    in oklab,
+    hsl(120, 100%, 21%),
+    hsl(178, 100%, 71%)
+  );
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  font-size: 2rem;
 }
 
 .TLHFStyle {
-    background: linear-gradient(in oklab, hsl(120, 100%, 21%), hsl(178, 100%, 71%));
-    background-clip: text;
-    color: rgba(0, 0, 0, 0);
-    font-size: 1.2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
+  background: linear-gradient(
+    173deg,
+    rgba(21, 71, 34, 1) 0%,
+    rgba(87, 199, 133, 1) 83%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
 .small {
-    font-size: 0.5rem;
+  font-size: 0.5rem;
 }
 
-a:link, a:visited {
-    background: linear-gradient(in oklab, hsl(120, 100%, 40%), hsl(178, 100%, 20%));
-    
-    background-clip: text;
-    color: rgba(0, 0, 0, 0);
-    text-decoration: none;
+a:link,
+a:visited {
+  background: linear-gradient(
+    in oklab,
+    hsl(120, 100%, 40%),
+    hsl(178, 100%, 20%)
+  );
+
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  text-decoration: none;
 }
 
-a:focus, a:hover {
-    background: linear-gradient(in oklab, hsl(120, 100%, 10%), hsl(178, 100%, 40%));
-    background-clip: text;
-    color: rgba(0, 0, 0, 0);
-    padding: 0.1rem 0.3rem;
-    border-bottom: 1px solid hsl(0, 0%, 50%);
-    /* border-right: 1px solid hsl(0, 0%, 50%); */
-    border-radius: 10px;
+a:focus,
+a:hover {
+  background: linear-gradient(
+    in oklab,
+    hsl(120, 100%, 10%),
+    hsl(178, 100%, 40%)
+  );
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  padding: 0.1rem 0.3rem;
+  border-bottom: 1px solid hsl(0, 0%, 50%);
+  /* border-right: 1px solid hsl(0, 0%, 50%); */
+  border-radius: 10px;
 }
 
-/* Recipes CSS */
+/* Recipe page styling */
 
-.recipe-presentation {
-    display: block;
-    line-height: 2rem;
+#recipe {
+    width: 80%;
     background-color: rgba(255, 255, 255, 0.857);
 
-    padding: 2rem;
-    margin: 2rem 1rem;
+  text-align: center;
+  padding: 0.7rem;
 
-    border: 1px solid hsl(0, 0%, 50%);
-    border-top: 1px solid hsl(0, 0%, 90%);
-    border-left: 1px solid hsl(0, 0%, 90%);
-    border-radius: 20px;
-    box-shadow: 0.2rem 0.2rem 0.5rem  hsl(0, 0%, 20%);
+  margin: 2rem auto;
+
+  border: 1px solid hsl(0, 0%, 50%);
+  border-top: 1px solid hsl(0, 0%, 90%);
+  border-left: 1px solid hsl(0, 0%, 90%);
+  border-radius: 20px;
+  box-shadow: 0.2rem 0.2rem 0.5rem hsl(0, 0%, 20%);
 }
 
-.link-recipe {
-    display: inline;
-    margin-inline: 1rem;
-    text-align: left;
+/* Recipe description */
 
+.recipe-presentation {
+  max-width: 1000px;
+  display: block;
+  line-height: 2rem;
+  background-color: rgba(255, 255, 255, 0.857);
+
+  padding: 2rem;
+  margin: 2rem auto;
+
+  border: 1px solid hsl(0, 0%, 50%);
+  border-top: 1px solid hsl(0, 0%, 90%);
+  border-left: 1px solid hsl(0, 0%, 90%);
+  border-radius: 20px;
+  box-shadow: 0.2rem 0.2rem 0.5rem hsl(0, 0%, 20%);
 }
 
-.recipe-presentation h2 {
-    display: block;
-    width: 100%;
-    margin: 2rem auto 3rem;
-    text-align: center;
-    word-break: break-word;
+.ingredients-steps h2 {
+  display: block;
+  width: 100%;
+  margin: 2rem auto 3rem;
+  text-align: center;
+  word-break: break-word;
 }
-
 
 img {
-    display: inline-block;
-    margin-left: 0.7rem;
-   float: right;
-    
+  display: inline-block;
+  margin-left: 0.7rem;
+  float: right;
 }
 
-.recipe-container p {
-    text-align: justify;
-  
+.recipe-presentation p {
+  text-align: justify;
 }
-
 
 .description-title {
-    display: inline-block;
-    margin-top: 2rem;
-   text-decoration: underline;
-   font-size: 1.1rem ;
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: underline;
+  font-size: 1.1rem;
 }
 
 dt {
- 
 }
 
 dd {
-    margin: 1rem 0 1rem 1rem;
+  margin: 1rem 0 1rem 1rem;
 }
 
-.ingredients-list>li {
+/*  actual recipe */
+
+.ingredient-recipe-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+}
+
+.ingredients-container, .steps-container {
+  max-width: 600px;
+  display: block;
+  line-height: 2rem;
+  background-color: rgba(255, 255, 255, 0.857);
+
+  padding: 2rem;
+  margin: 2rem auto;
+
+  border: 1px solid hsl(0, 0%, 50%);
+  border-top: 1px solid hsl(0, 0%, 90%);
+  border-left: 1px solid hsl(0, 0%, 90%);
+  border-radius: 20px;
+  box-shadow: 0.2rem 0.2rem 0.5rem hsl(0, 0%, 20%);
+}
+
+:is(.ingredients-container, .steps-container) h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+}
+
+.ingredients-list > li {
+  list-style-type: none;
+  list-style-position: inside;
+  font-size: 1.2rem;
+  margin: 1rem 0 0.2rem;
+}
+.instruction-list li {
     list-style-type: none;
-    list-style-position: inside;
-    font-size: 1.1rem;
-    margin: 1rem 0 0.2rem;
-    ÷
-    color: red;
 }
 
+
+.instruction-list > li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    font-size: 1.2rem;
+    margin: 1rem 0 0.2rem;
+  }
 
 .ingredients-list > li > ul > li {
-    font-size: 1rem;
+  font-size: 1rem;
+  list-style-position: outside;
+  padding-left: 1rem;
+  margin-inline: 3rem;
+
+}
+.instruction-list > li ul li {
+  font-size: 1rem;
+  list-style-position: outside;
+  padding-left: 1rem;
+  margin-inline: 3rem;
 }
 
-.healthy li { 
-    list-style-type: "🌱" ;
+.healthy li {
+  list-style-type: "🌱";
 }
 
 .normal li {
-    list-style-type: "🍫";
+  list-style-type: "🍫";
 }
 
 .superfood li {
-    list-style-type: "🥑🧘‍♀️🌟";
+  list-style-type: "🥑🌟";
 }
+
+.instruction-list {
+    list-style-type: decimal;
+}
+
+
+  
