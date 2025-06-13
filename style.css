@@ -262,7 +262,7 @@ a:hover {
   box-shadow: 0.2rem 0.2rem 0.5rem hsl(0, 0%, 20%);
 }
 
-.ingredients-steps h2 {
+.recipe-presentation h2 {
   display: block;
   width: 100%;
   margin: 2rem auto 3rem;
@@ -272,6 +272,9 @@ a:hover {
 
 img {
   display: inline-block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
   margin-left: 0.7rem;
   float: right;
 }
@@ -282,7 +285,7 @@ img {
 
 .description-title {
   display: inline-block;
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-decoration: underline;
   font-size: 1.1rem;
 }
