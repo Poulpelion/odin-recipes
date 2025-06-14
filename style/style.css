@@ -227,7 +227,7 @@ a:visited {
 
 a:focus,
 a:hover {
-  background: linear-gradient(
+  background-image: linear-gradient(
     in oklab,
     hsl(120, 100%, 10%),
     hsl(178, 100%, 40%)
