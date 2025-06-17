@@ -212,6 +212,8 @@ body {
   font-size: 0.5rem;
 }
 
+/* links */
+
 a:link,
 a:visited {
   background: linear-gradient(
@@ -283,7 +285,15 @@ a:hover {
 .recipe-presentation h2 {
   display: block;
   width: 100%;
-  margin: 2rem auto 3rem;
+  margin: 2rem auto;
+  text-align: center;
+  word-break: break-word;
+}
+
+.recipe-main-container .recipe-info {
+  display: block;
+  width: 100%;
+  margin: 2rem auto;
   text-align: center;
   word-break: break-word;
 }
@@ -306,8 +316,6 @@ img {
   text-decoration: underline;
   font-size: 1.1rem;
 }
-
-
 
 dd {
   margin: 1rem 0 1rem 1rem;

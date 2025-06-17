@@ -86,6 +86,19 @@ body {
   padding: 0 0.5rem;
 }
 
+.TLHFStyle {
+  background: linear-gradient(
+    173deg,
+    rgba(21, 71, 34, 1) 0%,
+    rgba(87, 199, 133, 1) 83%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
 /* nav styling */
 
 .main-nav {
@@ -146,32 +159,71 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .recipe:hover::before {
     content: "";
     position: absolute;
     margin-top: 0.7rem;
-    height: 102%;
-    width: 102%;
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
     background-image: linear-gradient(
       in oklab,
       hsla(120, 99%, 52%, 0.643),
       hsla(178, 100%, 50%, 0.728)
     );
-    box-shadow: 1px 1px 5px hsla(120, 99%, 52%, 0.576), -2px 1px 5px hsla(178, 100%, 50%, 0.632) ;
+    box-shadow: 1px 1px 10px hsla(120, 99%, 52%, 0.576), -2px 1px 10px hsla(178, 100%, 50%, 0.632) ;
     z-index: -1;
 
   }
 
-  a:link, a:visited {
+  .recipe a:is(:link, :visited) {
     color: black;
     text-decoration: none;
 
   }
 
-  a:focus, a:active {
+  .main-nav a:is(:link, :visited) {
+  background: linear-gradient(
+    in oklab,
+    hsl(120, 100%, 40%),
+    hsl(178, 100%, 20%)
+  );
 
-  }
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+}
+
+.main-nav  a:is(:focus, :hover) {
+  background-image: linear-gradient(
+    in oklab,
+    hsl(120, 100%, 10%),
+    hsl(178, 100%, 40%)
+  );
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  padding: 0.1rem 0.3rem;
+  border-bottom: 1px solid hsl(0, 0%, 50%);
+
+  border-radius: 10px;
+} 
+ 
+.recipe p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.recipe figcaption {
+  text-decoration: underline;
+  margin-inline: 1rem;
+  margin-bottom: 1rem;
+}
+
+.small {
+  font-size: 0.5rem;
+}
+
+
