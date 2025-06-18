@@ -112,26 +112,55 @@ body {
   box-shadow: 0.2rem 0.2rem 0.5rem hsl(0, 0%, 20%);
 }
 
-.main-nav menu {
-  line-height: 2rem;
-}
 .main-nav li {
-  width: 28%;
+  /* width: 28%; */
   display: inline-block;
   margin-inline: 2rem;
   list-style: none;
 }
 
-.top-nav {
-  display: inline-block;
-  width: 100%;
+.main-nav li a:link, .main-nav li a:visited, .recipe-main-container a:link, .recipe-main-container a:visited
+ {
+  text-decoration: none;
+ background-image: linear-gradient(
+  in oklab,
+  hsl(120, 100%, 40%),
+  hsl(178, 100%, 20%)
+);
+  background-clip: text;
+  color: rgba(240, 248, 255, 0);
+  border-radius: 10px;
+  padding: 0 0.2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bottom-nav, .description-nav {
-  display: inline-block;
+.main-nav li a:hover::before,.main-nav li a:focus::before, .recipe-main-container a:hover::before,.recipe-main-container a:focus::before {
+  content: "";
+  position: absolute;
+  height: 100%;
   width: 100%;
-  text-align: right;
+  /* z-index: -1; */
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px hsla(120, 88%, 42%, 0.922), -2px -2px 5px hsla(120, 88%, 90%, 0.122);;
+
+    
 }
+
+
+/* .main-nav li a::after {
+  content: "";
+  position: absolute;
+  height: 90%;
+  width:90%;
+  background-color: white;
+  
+    z-index: -1;
+    border-radius: 20px;
+  
+} */
 
 /* End Nav styling */
 
@@ -211,35 +240,6 @@ body {
   font-size: 0.5rem;
 }
 
-/* links */
-
-a:link,
-a:visited {
-  background: linear-gradient(
-    in oklab,
-    hsl(120, 100%, 40%),
-    hsl(178, 100%, 20%)
-  );
-
-  background-clip: text;
-  color: rgba(0, 0, 0, 0);
-  text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  background-image: linear-gradient(
-    in oklab,
-    hsl(120, 100%, 10%),
-    hsl(178, 100%, 40%)
-  );
-  background-clip: text;
-  color: rgba(0, 0, 0, 0);
-  padding: 0.1rem 0.3rem;
-  border-bottom: 1px solid hsl(0, 0%, 50%);
-  /* border-right: 1px solid hsl(0, 0%, 50%); */
-  border-radius: 10px;
-}
 
 /* Recipe page styling */
 
@@ -281,18 +281,32 @@ a:hover {
   box-shadow: 0.2rem 0.2rem 0.5rem hsl(0, 0%, 20%);
 }
 
+.recipe-presentation :is(.top-nav, .description-nav, .bottom-nav),
+.ingredient-recipe-container .bottom-nav {
+ display: inline-block;
+max-width: fit-content;
+ text-align: center;
+}
+
 .recipe-presentation h2 {
-  display: block;
+  display: inline-block;
   width: 100%;
   margin: 2rem auto;
   text-align: center;
   word-break: break-word;
 }
 
+.recipe-presentation h3 {
+  display: inline-block;
+  width: 100%;
+  margin: 1rem 0;
+ 
+}
+
 .recipe-main-container .recipe-info {
   display: block;
   width: 100%;
-  margin: 2rem auto;
+  margin: 1rem auto;
   text-align: center;
   word-break: break-word;
 }
@@ -310,7 +324,7 @@ img {
 }
 
 .description-title {
-  display: inline-block;
+  display: inline;
   margin-top: 1rem;
   text-decoration: underline;
   font-size: 1.1rem;
