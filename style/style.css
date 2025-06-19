@@ -23,7 +23,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 /* Index styling */
 
@@ -402,11 +402,15 @@ dd {
 }
 
 .normal li {
-  list-style-type: "🍫";
+  list-style-type: "🔬✨";
 }
 
 .superfood li {
   list-style-type: "🥑🌟";
+}
+
+.metabolism li {
+  list-style-type: "💪";
 }
 
 .instruction-list {
